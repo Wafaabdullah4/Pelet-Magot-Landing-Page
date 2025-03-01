@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesan Sekarang - Pelet Maggot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    #collapseMenu {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      #collapseMenu {
+        display: block !important;
+      }
+    }
+
+    #collapseMenu {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-gray-100">
+  <div class="max-w-[1920px] mx-auto">
+    <!-- Header Section -->
+    <header class="py-4 px-4 sm:px-10 z-50 min-h-[70px] relative">
+        <div class="lg:flex lg:items-center gap-x-2 relative">
+          <div class="flex items-center shrink-0">
+            <a href="javascript:void(0)">Pelet Maggot.</a>
+            <!-- Tombol buka navbar (hanya muncul di mobile) -->
+            <button id="toggleOpen" class="lg:hidden ml-auto">
+              <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Navbar menu -->
+          <div id="collapseMenu"
+            class="lg:ml-14 max-lg:hidden lg:!block w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50 z-50">
+            <div
+              class="lg:flex items-center w-full gap-6 max-lg:fixed max-lg:bg-black max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+              <!-- Tombol tutup navbar (hanya muncul di mobile) -->
+              <button id="toggleClose" class="lg:hidden ml-auto mb-4">
+                <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <!-- Daftar menu -->
+              <ul class="lg:flex gap-x-6 max-lg:space-y-3">
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a href="../index.html"
+                    class="hover:text-green-600 text-green-600 block transition-all">Home</a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a href="../index.html" class="hover:text-green-600 block transition-all">Tentang Kami</a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a href="../index.html" class="hover:text-green-600 block transition-all">Produk</a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a href="../index.html" class="hover:text-green-600 block transition-all">Testimoni</a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-3 px-3">
+                  <a href="../index.html" class="hover:text-green-600 block transition-all">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <!-- Pesan Sekarang Section -->
+    <div class="mt-16 max-w-7xl mx-auto px-4 sm:px-10">
+      <div class="mb-16 max-w-2xl text-center mx-auto">
+        <h2 class="md:text-4xl text-3xl font-semibold md:!leading-[50px] mb-6">
+          Pesan Pelet Maggot Sekarang
+        </h2>
+        <p class="text-gray-400">
+          Isi formulir di bawah ini untuk memesan pelet maggot berkualitas tinggi kami. Tim kami akan segera menghubungi Anda untuk konfirmasi pesanan.
+        </p>
+      </div>
+      <div class="bg-[#111] p-8 rounded-2xl">
+        <form class="grid gap-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="nama" class="block text-sm font-medium text-gray-300 mb-2">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" class="w-full px-4 py-3 bg-black rounded-md border border-gray-700 text-gray-100 focus:outline-none focus:border-green-600" required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-black rounded-md border border-gray-700 text-gray-100 focus:outline-none focus:border-green-600" required>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="telepon" class="block text-sm font-medium text-gray-300 mb-2">Nomor Telepon</label>
+              <input type="tel" id="telepon" name="telepon" class="w-full px-4 py-3 bg-black rounded-md border border-gray-700 text-gray-100 focus:outline-none focus:border-green-600" required>
+            </div>
+            <div>
+              <label for="alamat" class="block text-sm font-medium text-gray-300 mb-2">Alamat Pengiriman</label>
+              <input type="text" id="alamat" name="alamat" class="w-full px-4 py-3 bg-black rounded-md border border-gray-700 text-gray-100 focus:outline-none focus:border-green-600" required>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="jumlah" class="block text-sm font-medium text-gray-300 mb-2">Jumlah Pesanan (kg)</label>
+              <input type="number" id="jumlah" name="jumlah" class="w-full px-4 py-3 bg-black rounded-md border border-gray-700 text-gray-100 focus:outline-none focus:border-green-600" required>
+            </div>
+            <div>
+              <label for="jenis" class="block text-sm font-medium text-gray-300 mb-2">Jenis Ternak</label>
+              <select id="jenis" name="jenis" class="w-full px-4 py-3 bg-black rounded-md border border-gray-700 text-gray-100 focus:outline-none focus:border-green-600" required>
+                <option value="ayam">Ayam</option>
+                <option value="ikan">Ikan</option>
+                <option value="sapi">Sapi</option>
+                <option value="kambing">Kambing</option>
+                <option value="bebek">Bebek</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="catatan" class="block text-sm font-medium text-gray-300 mb-2">Catatan Tambahan</label>
+            <textarea id="catatan" name="catatan" rows="4" class="w-full px-4 py-3 bg-black rounded-md border border-gray-700 text-gray-100 focus:outline-none focus:border-green-600"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="px-6 py-3.5 rounded-md text-gray-100 bg-green-600 hover:bg-green-700 transition-all">
+              Kirim Pesanan
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="mt-32 bg-[#111] py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-10">
+        <div class="grid md:grid-cols-4 gap-12">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Pelet Maggot.</h3>
+            <p class="text-gray-400">
+              Produsen pelet maggot berkualitas tinggi untuk ikan dan ayam.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="../about/jelajahi.html" class="hover:text-green-600">Tentang Kami</a></li>
+              <li><a href="../index.html" class="hover:text-green-600">Produk</a></li>
+              <li><a href="../index.html" class="hover:text-green-600">Testimoni</a></li>
+              <li><a href="../index.html" class="hover:text-green-600">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Hubungi Kami</h3>
+            <ul class="text-gray-400 space-y-2">
+              <li>Email: info@peletmaggot.com</li>
+              <li>Telepon: +62 851 6184 5683</li>
+              <li>Alamat: Jl. Peternakan No. 123, Bandung</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
+            <div class="flex gap-4">
+              <a href="https://www.instagram.com/bany_dam/" class="text-gray-400 hover:text-green-600">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/bany_dam/" class="text-gray-400 hover:text-green-600">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/bany_dam/" class="text-gray-400 hover:text-green-600">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.instagram.com/bany_dam/" class="text-gray-400 hover:text-green-600">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-8 border-gray-700" />
+        <div class="text-center text-gray-400">
+          <p>&copy; 2025 Pelet Maggot. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const toggleOpen = document.getElementById('toggleOpen'); 
+    const toggleClose = document.getElementById('toggleClose'); 
+    const collapseMenu = document.getElementById('collapseMenu'); 
+
+    // Fungsi untuk membuka navbar
+    toggleOpen.addEventListener('click', function () {
+      collapseMenu.style.display = 'block'; 
+    });
+
+    // Fungsi untuk menutup navbar
+    toggleClose.addEventListener('click', function () {
+      collapseMenu.style.display = 'none'; 
+    });
+
+    // Tutup navbar jika klik di luar area navbar (opsional)
+    document.addEventListener('click', function (event) {
+      if (!collapseMenu.contains(event.target) && !toggleOpen.contains(event.target)) {
+        collapseMenu.style.display = 'none';
+      }
+    });
+  });
+</script>
+</body>
+
+</html>

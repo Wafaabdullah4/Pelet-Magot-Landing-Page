@@ -5,9 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <title>Pelet Maggot</title>
 
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="icon" href="assets/img/logo.jpg">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -49,7 +51,7 @@
     <div
       class="relative lg:min-h-screen 2xl:min-h-[730px] before:absolute before:inset-0 before:w-full before:bg-black before:opacity-60"
       style="
-          background-image: url('bg1.jpg');
+          background-image: url('assets/img/bg1.jpg');
           background-size: cover;
           background-repeat: no-repeat;
         ">
@@ -129,11 +131,15 @@
         <div class="mt-14 flex gap-x-8 gap-y-4 justify-center max-sm:flex-col">
           <button type="button"
             class="px-6 py-3.5 rounded-md text-gray-100 bg-green-600 hover:bg-green-700 transition-all">
-            Pesan Sekarang
+            <a href="order/pesan.html">
+              Pesan Sekarang
+            </a>
           </button>
           <button type="button"
             class="bg-transparent hover:bg-green-600 border border-green-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">
-            Pelajari Lebih Lanjut
+            <a href="about/jelajahi.html">
+              Pelajari Lebih Lanjut
+            </a>
           </button>
         </div>
       </div>
@@ -156,11 +162,13 @@
           </p>
           <button type="button"
             class="px-6 py-3.5 rounded-md text-gray-100 bg-green-600 hover:bg-green-700 transition-all mt-10">
-            Jelajahi Lebih Lanjut
+            <a href="about/jelajahi.html">
+              Jelajahi Lebih Lanjut
+            </a>
           </button>
         </div>
         <div>
-          <img src="step-magot.jpg" alt="Tentang Kami" class="w-full mx-auto rounded-lg shadow-lg" />
+          <img src="assets/img/step-magot.jpg" alt="Tentang Kami" class="w-full mx-auto rounded-lg shadow-lg" />
         </div>
       </div>
     </div>
@@ -183,7 +191,7 @@
             <p class="text-gray-400">
               Meningkatkan pertumbuhan ikan dengan cepat dan alami.
             </p>
-            <a href="javascript:void(0);" class="text-green-600 inline-block mt-4 hover:underline">Selengkapnya</a>
+            <a href="pelet/pelet_untuk_ikan.html" class="text-green-600 inline-block mt-4 hover:underline">Selengkapnya</a>
           </div>
           <div class="text-center bg-[#111] px-6 py-8 rounded-2xl">
             <i class="fa-solid fa-egg text-4xl text-green-600 mb-4"></i>
@@ -191,7 +199,7 @@
             <p class="text-gray-400">
               Membuat ayam lebih sehat dan aktif.
             </p>
-            <a href="javascript:void(0);" class="text-green-600 inline-block mt-4 hover:underline">Selengkapnya</a>
+            <a href="pelet/pelet_untuk_ayam.html" class="text-green-600 inline-block mt-4 hover:underline">Selengkapnya</a>
           </div>
           <div class="text-center bg-[#111] px-6 py-8 rounded-2xl">
             <i class="fa-solid fa-seedling text-4xl text-green-600 mb-4"></i>
@@ -199,7 +207,7 @@
             <p class="text-gray-400">
               Cocok untuk semua jenis ternak.
             </p>
-            <a href="javascript:void(0);" class="text-green-600 inline-block mt-4 hover:underline">Selengkapnya</a>
+            <a href="pelet/pelet_untuk_campuran.html" class="text-green-600 inline-block mt-4 hover:underline">Selengkapnya</a>
           </div>
         </div>
       </div>
@@ -219,7 +227,9 @@
         </p>
       </div>
       <button class="px-6 py-3.5 rounded-md text-gray-100 bg-green-600 hover:bg-green-700 transition-all mt-10">
-        Pesan Sekarang
+        <a href="order/pesan.html">
+          Pesan Sekarang
+        </a>
       </button>
     </div>
 
@@ -235,7 +245,7 @@
       <div class="grid md:grid-cols-3 gap-12 max-md:justify-center text-center mt-16">
         <div>
           <div class="flex flex-col items-center">
-            <img src="petani-1.jpg" class="w-24 h-24 rounded-full shadow-xl border-2 border-white" />
+            <img src="assets/img/petani-1.jpg" class="w-24 h-24 rounded-full shadow-xl border-2 border-white" />
             <div class="mt-4">
               <h4 class="text-base">Budi Santoso</h4>
               <p class="text-xs text-green-600 mt-2">Peternak Ikan</p>
@@ -249,7 +259,7 @@
         </div>
         <div>
           <div class="flex flex-col items-center">
-            <img src="petani-2.jpg" class="w-24 h-24 rounded-full shadow-xl border-2 border-white" />
+            <img src="assets/img/petani-2.jpg" class="w-24 h-24 rounded-full shadow-xl border-2 border-white" />
             <div class="mt-4">
               <h4 class="text-base">Siti Aminah</h4>
               <p class="text-xs text-green-600 mt-2">Peternak Ayam</p>
@@ -263,7 +273,7 @@
         </div>
         <div>
           <div class="flex flex-col items-center">
-            <img src="petani-3.jpg" class="w-24 h-24 rounded-full shadow-xl border-2 border-white" />
+            <img src="assets/img/petani-3.jpg" class="w-24 h-24 rounded-full shadow-xl border-2 border-white" />
             <div class="mt-4">
               <h4 class="text-base">Rudi Hartono</h4>
               <p class="text-xs text-green-600 mt-2">Peternak Ikan</p>
@@ -287,43 +297,43 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-16">
           <div class="cursor-pointer rounded overflow-hidden group">
             <div>
-              <span class="block text-gray-400 mb-2">10 FEB 2023</span>
-              <h3 class="text-xl group-hover:text-green-600 transition-all">Manfaat Pelet Maggot untuk Ikan</h3>
+              <span class="block text-gray-400 mb-2">10 FEB 2025</span>
+              <h3 class="text-xl group-hover:text-green-600 transition-all"><a href="blog/blog-1.html">Manfaat Pelet Maggot untuk Ikan</a></h3>
               <div class="mt-6">
                 <p class="text-gray-400">Pelajari manfaat pelet maggot untuk pertumbuhan ikan.</p>
               </div>
             </div>
             <hr class="my-6" />
             <div class="flex flex-wrap items-center gap-3">
-              <img src='petani-1.jpg' class="w-9 h-9 rounded-full" />
+              <img src='assets/img/petani-1.jpg' class="w-9 h-9 rounded-full" />
               <p class="text-xs text-gray-400">BY TIM</p>
             </div>
           </div>
           <div class="cursor-pointer rounded overflow-hidden group">
             <div>
-              <span class="block text-gray-400 mb-2">15 MAR 2023</span>
-              <h3 class="text-xl group-hover:text-green-600 transition-all">Cara Menggunakan Pelet Maggot untuk Ayam</h3>
+              <span class="block text-gray-400 mb-2">15 MAR 2025</span>
+              <h3 class="text-xl group-hover:text-green-600 transition-all"><a href="blog/blog-2.html">Cara Menggunakan Pelet Maggot untuk Ayam</a></h3>
               <div class="mt-6">
                 <p class="text-gray-400">Tips dan trik menggunakan pelet maggot untuk ayam agar lebih sehat dan aktif.</p>
               </div>
             </div>
             <hr class="my-6" />
             <div class="flex flex-wrap items-center gap-3">
-              <img src='petani-2.jpg' class="w-9 h-9 rounded-full" />
+              <img src='assets/img/petani-2.jpg' class="w-9 h-9 rounded-full" />
               <p class="text-xs text-gray-400">BY TIM</p>
             </div>
           </div>
           <div class="cursor-pointer rounded overflow-hidden group">
             <div>
-              <span class="block text-gray-400 mb-2">20 APR 2023</span>
-              <h3 class="text-xl group-hover:text-green-600 transition-all">Keunggulan Pelet Maggot Campuran</h3>
+              <span class="block text-gray-400 mb-2">20 APR 2025</span>
+              <h3 class="text-xl group-hover:text-green-600 transition-all"><a href="blog/blog-3.html">Keunggulan Pelet Maggot Campuran</a></h3>
               <div class="mt-6">
                 <p class="text-gray-400">Kenali keunggulan pelet maggot campuran untuk semua jenis ternak.</p>
               </div>
             </div>
             <hr class="my-6" />
             <div class="flex flex-wrap items-center gap-3">
-              <img src='petani-3.jpg' class="w-9 h-9 rounded-full" />
+              <img src='assets/img/petani-3.jpg' class="w-9 h-9 rounded-full" />
               <p class="text-xs text-gray-400">BY TIM</p>
             </div>
           </div>
@@ -343,7 +353,7 @@
           <div>
             <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
             <ul class="text-gray-400 space-y-2">
-              <li><a href="#about" class="hover:text-green-600">Tentang Kami</a></li>
+              <li><a href="about/jelajahi.html" class="hover:text-green-600">Tentang Kami</a></li>
               <li><a href="#produk" class="hover:text-green-600">Produk</a></li>
               <li><a href="#testimonial" class="hover:text-green-600">Testimoni</a></li>
               <li><a href="#blog" class="hover:text-green-600">Blog</a></li>
@@ -353,23 +363,23 @@
             <h3 class="text-lg font-semibold mb-4">Hubungi Kami</h3>
             <ul class="text-gray-400 space-y-2">
               <li>Email: info@peletmaggot.com</li>
-              <li>Telepon: +62 123 4567 890</li>
-              <li>Alamat: Jl. Peternakan No. 123, Jakarta</li>
+              <li>Telepon: +62 851 6184 5683</li>
+              <li>Alamat: Jl. Peternakan No. 123, Bandung</li>
             </ul>
           </div>
           <div>
             <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
             <div class="flex gap-4">
-              <a href="javascript:void(0)" class="text-gray-400 hover:text-green-600">
+              <a href="https://www.instagram.com/bany_dam/" class="text-gray-400 hover:text-green-600">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="javascript:void(0)" class="text-gray-400 hover:text-green-600">
+              <a href="https://www.instagram.com/bany_dam/" class="text-gray-400 hover:text-green-600">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="javascript:void(0)" class="text-gray-400 hover:text-green-600">
+              <a href="https://www.instagram.com/bany_dam/" class="text-gray-400 hover:text-green-600">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="javascript:void(0)" class="text-gray-400 hover:text-green-600">
+              <a href="https://www.instagram.com/bany_dam/" class="text-gray-400 hover:text-green-600">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
